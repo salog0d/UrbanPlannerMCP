@@ -1,0 +1,35 @@
+flowchart LR
+    subgraph Client
+      IDE[VSCode / CLI\n`mcp dev`]
+      Orchestrator[Agent / Orchestrator]
+    end
+
+    IDE -->|hot-reload & inspect| MCP
+    Orchestrator -->|call_tool JSON-RPC| MCP
+
+    subgraph MCP[FastMCP Server (`src/server.py`)]
+      SRV[Server Object\nFastMCP()]
+      PR[Prompts\n`prompts/_prompts.py`]
+      TI[Tool: CityInfraModel\n`tools/city_infra_model.py`]
+      TE[Tool: PopulationInequalities\n`tools/population_inequalities_model.py`]
+      SC[Typed Schemas\n`schemas/*.py`]
+      CFG[Settings\n`core/settings.py`]
+    end
+
+    SRV --- PR
+    SRV --- TI
+    SRV --- TE
+    SRV --- SC
+    SRV --- CFG
+
+    subgraph External Services
+      MODEL1[Model API #1\n(PCA/Infra)]
+      MODEL2[Model API #2\n(Inequalities)]
+      S3[(S3 datasets/exports)]
+      LOGS[CloudWatch/Logging]
+    end
+
+    TI -->|HTTP| MODEL1
+    TE -->|HTTP| MODEL2
+    SRV -->|write/read| S3
+    SRV -->|logs/metrics| LOGS
