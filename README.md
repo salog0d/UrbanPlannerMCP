@@ -1,5 +1,4 @@
 
----
 ##  UrbanPlannerMCP
 
 UrbanPlannerMCP provides an **MCP-compliant service layer** for urban planning analysis.
@@ -188,4 +187,5 @@ See [LICENSE](LICENSE) for details.
 ---
 
 Would you like me to include a **badges section** (Python version, license, last commit, etc.) and a **diagram of the module relationships** at the top for a more polished GitHub presentation?
+
 
