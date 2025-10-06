@@ -1,0 +1,107 @@
+# === Python / Virtualenv ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg-info/
+.eggs/
+*.log
+*.tmp
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# Byte-compiled / optimized / DLL files
+*.dll
+*.dylib
+*.o
+*.a
+*.out
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.orig
+
+# === OS / File System ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.lnk
+
+# === Environment / Secrets ===
+.env
+
+# === Build / Distribution ===
+build/
+dist/
+pip-wheel-metadata/
+site/
+htmlcov/
+*.egg
+MANIFEST
+
+# === Cache / Test / Coverage ===
+.cache/
+.coverage
+coverage.xml
+nosetests.xml
+pytest_cache/
+.tox/
+.mypy_cache/
+.pytest_cache/
+hypothesis/
+
+# === Jupyter / Notebooks ===
+.ipynb_checkpoints
+*.ipynb
+
+# === Data / Outputs ===
+data/
+datasets/
+outputs/
+*.csv
+*.xlsx
+*.json
+*.geojson
+
+# === FastAPI / MCP specific ===
+logs/
+*.db
+*.sqlite3
+*.sqlite
+__debug__/
+.mcp_cache/
+*.pid
+
+# === Local Development Artifacts ===
+*.log
+*.pid
+*.seed
+*.lock
+*.bak
+*.tmp
+*.swp
+*.save
+
+# === Optional: ignore generated assets ===
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+
+# === Compiled translations ===
+*.mo
+*.pot
