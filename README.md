@@ -1,13 +1,6 @@
----
-
-# 🌆 UrbanPlannerMCP
-
-**UrbanPlannerMCP** is an intelligent **Model Context Protocol (MCP) server** that powers urban analytics by integrating **governmental** and **NASA datasets**.
-It enables distributed AI agents to analyze infrastructure, population inequality, and demographic indicators through FastMCP tools and standardized schema definitions.
 
 ---
-
-##  Overview
+##  UrbanPlannerMCP
 
 UrbanPlannerMCP provides an **MCP-compliant service layer** for urban planning analysis.
 It exposes modular analytical tools that can be streamed or called programmatically by orchestrators, allowing you to evaluate city infrastructure, demographic distributions, and social inequalities.
@@ -195,3 +188,4 @@ See [LICENSE](LICENSE) for details.
 ---
 
 Would you like me to include a **badges section** (Python version, license, last commit, etc.) and a **diagram of the module relationships** at the top for a more polished GitHub presentation?
+
