@@ -1,6 +1,9 @@
 import requests
-from src.schemas.poulation_schema import UnequalityIndicatorsRequest, UnequalityIndicatorsResponse
-from src.core.settings import Settings as settings
+from schemas.inequality_indicators_schema import (
+    UnequalityIndicatorsRequest,
+    UnequalityIndicatorsResponse,
+)
+from core.settings import Settings as settings
 
 class InequalityModel:
 
