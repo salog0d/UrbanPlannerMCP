@@ -25,4 +25,5 @@ def compare_zones_prompt(_ctx: dict) -> PromptTemplate:
             "Devuelve diferencias clave."
         ),
         input_variables=["zone_a", "zone_b"],
-    )
+    )#TODO define typed response schemas for prompts module
+
